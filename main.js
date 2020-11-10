@@ -1,5 +1,6 @@
-getLink = (id = 0) => {
-    	if(id<190) {
+arr = []
+getLink = (id = 0, n = 10) => {
+    	if(id<n) {
 		setTimeout(function() {
             if(document.querySelector(".ji94ytn4.r9f5tntg.d2edcug0"))
             {
@@ -15,3 +16,5 @@ getLink = (id = 0) => {
 		console.log("DONE!")
 	}
 }
+getLink()
+arr.map(x => {console.log(x)})
