@@ -8,7 +8,7 @@ getLink = (id = 0, n = 10) => {
             }
                 document.querySelector('[aria-label="Next photo"]').click()
 			    id++;
-			    getLink(id)
+			    getLink(id, n)
 
 		}, 1000)
 	}
@@ -16,5 +16,5 @@ getLink = (id = 0, n = 10) => {
 		console.log("DONE!")
 	}
 }
-getLink()
+getLink(0,100)
 arr.map(x => {console.log(x)})
